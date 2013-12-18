@@ -92,7 +92,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 				$('<div></div>').addClass(settings.containerClass).insertBefore(wrapper).append(wrapper);
 			}
 
-			var width = settings.width ? settings.width : tb.outerWidth();
+                       var width = settings.width ? settings.width : (tb.parent().outerWidth() - settings.scrollbarWidth) ;
 
 			wrapper.css
 			({
